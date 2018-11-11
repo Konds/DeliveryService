@@ -1,0 +1,25 @@
+######## Requirements ########
+
+- Have MongoDB Installed.
+- Visual Studio 2017
+- IIS
+
+######## How to Start/Test the application ########
+
+1. Run 'StartMongoDb.bat' (Configure with necessary Locations)
+2. Run 'StartMongoDbCollections.bat' (Configure with necessary Locations)
+3. The Application does not have Self-Hosting, so open it in VS2017 and Run. Or deploy on IIS.
+4. The collections and connections strings are using:
+	MongoServer: http://localhost:27017/
+	MongoDataBase: PointsDB
+	Application Base URL: http://localhost:44775/api/v1/
+
+Note: If changed, it also must be changed in the Application Settings.
+
+######## Known Issues ########
+
+- Unit Tests Missing.
+- Authentication/Authorization not implemented.
+- Missing Endpoints.
+- Due to an issue with DI could not complete.
+- Missing validations for Point and Route Creation to verify if exists and when deleted, delete in the other collection.
